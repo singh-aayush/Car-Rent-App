@@ -1,0 +1,498 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+header {
+  width: 100% !important;
+  height: 29rem !important;
+}
+
+.about_back_img {
+  background-size: cover;
+  height: 27rem;
+  width: 100%;
+  filter: blur(7px);
+  opacity: 0.7;
+}
+
+.nav-container .menu #menu-list li a {
+  color: tomato;
+}
+
+.nav-container .menu #menu-list li a:hover {
+  color: white !important;
+}
+
+.nav-container .register > a:nth-child(1) {
+  color: tomato;
+  transition: all 0.3s ease;
+}
+
+.nav-container .register > a:nth-child(1):hover {
+  color: white !important;
+}
+
+.nav-container .register > a:nth-child(2) {
+  transition: all 0.3s ease;
+}
+
+.nav-container .register > a:nth-child(2):hover {
+  color: black !important;
+}
+
+header .heading_with_option {
+  position: absolute;
+  margin: auto;
+  top: 11rem;
+  left: 11rem;
+  display: flex;
+  flex-direction: column;
+}
+
+header .heading_with_option .heading_context {
+  font-size: 1.5rem;
+}
+
+header .heading_with_option .heading_context .heading_links {
+  font-size: 1.2rem;
+}
+
+header .heading_with_option .heading_context .heading_links :nth-child(1) {
+  color: white;
+}
+
+header .heading_with_option .heading_context .heading_links a:nth-child(2) {
+  color: white;
+}
+
+header
+  .heading_with_option
+  .heading_context
+  .heading_links
+  :nth-child(1):hover {
+  color: tomato;
+}
+.about_company {
+  margin: 5rem 0;
+  padding: 1rem 4rem;
+}
+.about_company .company_detailing {
+  display: grid;
+  grid-template-columns: 40% 60%;
+  gap: 2rem;
+}
+.about_company .company_detailing .company_heading_detail > h1 {
+  font-size: 2rem;
+  padding: 10px 0;
+}
+.about_company
+  .company_detailing
+  .company_heading_detail
+  .about_Comopany_Description
+  > p {
+  font-size: 18px;
+}
+.about_company .company_detailing .about_img {
+  display: flex;
+  justify-content: center;
+}
+.about_company .company_detailing .about_img img {
+  width: 350px;
+  height: 350px;
+  border-radius: 7px;
+}
+.about_company .company_detailing .company_heading .about_car_helps {
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+  justify-content: left;
+  gap: 1.5rem;
+  align-items: center;
+  padding: 3.6rem 0 2.5rem;
+}
+.about_company .company_detailing .company_heading .about_car_helps .help {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  align-items: center;
+  gap: 1rem;
+}
+.about_company
+  .company_detailing
+  .company_heading
+  .about_car_helps
+  .help
+  .car_type_detail {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.about_company
+  .company_detailing
+  .company_heading
+  .about_car_helps
+  .help
+  .car_type_detail
+  p {
+  font-size: 1rem;
+  width: 50%;
+}
+.some_prescription {
+  margin-bottom: 8rem !important;
+}
+.contact_us {
+  padding: 4rem 1rem;
+  background-color: black;
+  color: white;
+  font-size: 1.5rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.contact_us .contact_us_one {
+  display: flex !important;
+  flex-direction: row !important;
+  color: tomato !important;
+  text-align: center;
+  align-items: center;
+  gap: 0.5rem;
+  padding-top: 1rem;
+}
+
+.team_details .team_members {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 5rem 6rem;
+  justify-content: space-around;
+  gap: 4rem;
+}
+
+.team_details .team_members .member {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.team_details .team_members .member > img {
+  width: 300px;
+  height: 300px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.team_details .team_members .member .about_members {
+  width: 100%;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: skyblue;
+  border-top-right-radius: 65px;
+  border-bottom-left-radius: 65px;
+}
+
+.team_details .team_members .member .about_members > p:nth-child(1) {
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+.team_details .team_members .member .about_members > p:nth-child(2) {
+  color: white;
+}
+
+.contact_here {
+  padding: 6rem;
+}
+
+.contact_here .contact_page {
+  display: grid;
+  grid-template-columns: 60% 40%;
+}
+
+.contact_here .contact_page .contact_details {
+  padding: 4rem 1.5rem 0;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  background-color: #1da4e2ab;
+  border-top-left-radius: 16px;
+  border-bottom-left-radius: 16px;
+}
+
+.contact_here .contact_page .contact_details h1 {
+  font-size: 2rem;
+}
+
+.contact_here .contact_page .contact_details p {
+  font-size: 1.3rem;
+  padding: 12px 0;
+}
+
+.contact_here .contact_page .contact_details .contact_one {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: center;
+  padding: 12px 0;
+}
+
+.contact_here .contact_page .contact_details .contact_one h4 {
+  color: white;
+}
+
+.contact_here .contact_page .contact_details .contact_one span {
+  padding-right: 6px;
+}
+
+.contact_here .contact_page .contact_details .contact_two {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: center;
+  padding: 12px 0;
+}
+
+.contact_here .contact_page .contact_details .contact_two h4 {
+  color: white;
+}
+
+.contact_here .contact_page .contact_details .contact_two span {
+  padding-right: 6px;
+}
+
+.contact_here .contact_page .contact_details .contact_three {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: center;
+  padding: 12px 0;
+}
+
+.contact_here .contact_page .contact_details .contact_three h4 {
+  color: white;
+}
+
+.contact_here .contact_page .contact_details .contact_three span {
+  padding-right: 6px;
+}
+
+.contact_here .contact_page .detail_fill_section {
+  padding: 1.5rem;
+  background-color: lightgray;
+  border-top-right-radius: 16px;
+  border-bottom-right-radius: 16px;
+}
+
+.contact_here .contact_page .detail_fill_section form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 1.2rem;
+  gap: 4px;
+}
+
+.contact_here .contact_page .detail_fill_section form input {
+  padding: 7px;
+  font-size: 14px;
+  border-radius: 3px;
+  border: 2px solid black;
+  outline: none;
+}
+
+.contact_here .contact_page .detail_fill_section form textarea {
+  padding: 7px;
+  font-size: 14px;
+  border-radius: 3px;
+  border: 2px solid black;
+  outline: none;
+}
+
+.contact_here .contact_page .detail_fill_section form label {
+  padding: 5px 0 3px;
+}
+
+.contact_here .contact_page .detail_fill_section form label span {
+  padding: 3px;
+  color: tomato;
+}
+
+.contact_here .contact_page .detail_fill_section .full_details .a_send_msg {
+  text-decoration: none;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+}
+
+.contact_here
+  .contact_page
+  .detail_fill_section
+  .full_details
+  .a_send_msg
+  .send_msg {
+  width: 20%;
+  margin: 14px 0;
+  background-color: tomato;
+  outline: none;
+  color: white;
+  cursor: pointer;
+}
+
+/* MEDIA QUERIES */
+
+@media (max-width: 790px) {
+  .about_company .company_detailing {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .about_company .company_detailing .company_heading {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    padding: 3rem 0 0;
+  }
+  .about_company .company_detailing .company_heading .about_car_helps {
+    flex-direction: column;
+    padding: 1rem 0;
+    gap: 12px;
+  }
+  .about_company
+    .company_detailing
+    .company_heading
+    .about_car_helps
+    .help
+    img {
+    width: 50px;
+    height: 24px;
+  }
+  .about_company
+    .company_detailing
+    .company_heading
+    .about_car_helps
+    .help
+    .car_type_detail
+    p {
+    font-size: 13px;
+  }
+  .contact_here {
+    padding: 4.5rem 2rem;
+  }
+  .contact_here .contact_page {
+    grid-template-columns: 55% 45%;
+  }
+  .contact_here .contact_page .contact_details h1 {
+    font-size: 1.5rem;
+  }
+  .contact_here .contact_page .contact_details p {
+    font-size: 1rem;
+  }
+  .contact_here .contact_page .contact_details .contacts {
+    font-size: 12px;
+  }
+  .contact_here .contact_page .detail_fill_section {
+    padding: 1.5rem 1rem;
+  }
+}
+
+@media (max-width: 560px) {
+  header .heading_with_option {
+    left: 100px;
+  }
+  .contact_us {
+    font-size: 1rem;
+    text-align: center;
+  }
+  .about_company {
+    padding: 1rem 2.5rem;
+  }
+  .about_company .company_heading {
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .about_company .company_heading .company_heading_detail {
+    text-align: center;
+  }
+  .about_company .company_heading .about_car_helps {
+    flex-direction: row;
+    padding: 60px 0 0 !important;
+  }
+  .contact_here {
+    padding: 4.5rem 1.2rem;
+  }
+  .contact_here .contact_page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .contact_here .contact_page .contact_details {
+    border-top-right-radius: 16px;
+    border-bottom-left-radius: 0px;
+  }
+  .contact_here .contact_page .detail_fill_section {
+    width: 100%;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 16px;
+  }
+}
+
+@media (max-width: 425px) {
+  .about_company {
+    margin: 3rem 0 !important;
+  }
+  .contact_here .contact_page .contact_details {
+    text-align: center !important;
+  }
+  .contact_here .contact_page .contact_details .contacts {
+    margin: auto !important;
+  }
+}
+
+@media (max-width: 340px) {
+  .about_company {
+    padding: 0 10px;
+  }
+  .about_company .company_detailing .about_img img {
+    width: 265px;
+    height: 265px;
+  }
+  .about_company
+    .company_detailing
+    .company_heading
+    .company_heading_detail
+    h1 {
+    font-size: 1.5rem;
+  }
+  .about_company
+    .company_detailing
+    .company_heading
+    .company_heading_detail
+    .about_Comopany_Description {
+    padding: 0 14px;
+  }
+  .about_company
+    .company_detailing
+    .company_heading
+    .company_heading_detail
+    .about_Comopany_Description
+    p {
+    font-size: 14px;
+  }
+  .about_company .company_heading .about_car_helps {
+    padding: 45px 0 0;
+  }
+  .contact_here .contact_page .contact_details {
+    padding: 1.5rem 0.8rem !important;
+  }
+}

@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Car Rent</title>
+    <link rel="stylesheet" href="/style.css" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+
+<body>
+    <header id="header">
+        <nav>
+            <img src="/Image folder/background-buildings.png" alt="" class="back_img" />
+            <div class="mobile_nav">
+                <div class="close_nav">
+                    <span class="material-symbols-outlined"> close </span>
+                </div>
+                <ul id="mobileNav-menu-list">
+                    <li class="nav-menu-list"><a href="#">Home</a></li>
+                    <li class="nav-menu-list model_click"><a href="#models">Models</a></li>
+                    <li class="nav-menu-list"><a href="about.html">About</a></li>
+                    <li class="nav-menu-list"><a href="ourTeam.html">Our team</a></li>
+                    <li class="nav-menu-list"><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <img src="/Image folder/logo icon.png" alt="" />
+                </div>
+                <div class="menu">
+                    <ul id="menu-list">
+                        <li class="nav-menu-list"><a href="#" id="home-link">Home</a></li>
+                        <li class="nav-menu-list">
+                            <a href="#" id="model-link">Models</a>
+                        </li>
+                        <li class="nav-menu-list">
+                            <a href="about.html" id="about-link">About</a>
+                        </li>
+                        <li class="nav-menu-list">
+                            <a href="ourTeam.html" id="team-link">Our team</a>
+                        </li>
+                        <li class="nav-menu-list">
+                            <a href="contact.html" id="contact-link">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="register">
+                    <a href="#">Log In</a>
+                    <a href="#">Register</a>
+                </div>
+                <div class="register_details">
+                    <div class="full_registration">
+                        <div class="register_detail">
+                            <div class="register_form">
+                                <form action="">
+                                    <label for="firstname">First Name</label>
+                                    <input type="text" name="firstname" id="Fullname" />
+                                    <label for="secondname">Second Name</label>
+                                    <input type="text" name="secondname" id="Sname" />
+                                    <label for="email">Email</label>
+                                    <input type="email" />
+                                    <label for="password">Create Password</label>
+                                    <input type="password" />
+                                    <label for="confpassword">Confirm Password</label>
+                                    <input type="password" />
+                                </form>
+                                <button class="register_bton">Register</button>
+                            </div>
+                            <!-- <div class="login_here">
+                                <div class="log_bton">
+                                    <button class="login_here">Log In</button>
+                                </div>
+                                <div class="rst_bton">
+                                    <button class="reg_here">Register</button>
+                                </div>
+                            </div> -->
+                        </div>
+
+                        <div class="login_detail">
+                            <div class="login_form">
+                                <form action="">
+                                    <label for="fullname">Full Name</label>
+                                    <input type="text" name="fullname" id="Fname" />
+                                    <label for="email">Email</label>
+                                    <input type="email" />
+                                    <label for="Yourpassword">Password</label>
+                                    <input type="password" />
+                                </form>
+                                <button class="login_bton">Log In</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <label for="bton" id="bton_icon">
+                    <span class="material-symbols-outlined"> menu </span>
+                </label>
+            </div>
+            <section class="head">
+                <div class="car-detail">
+                    <h4>Plan to explore now</h4>
+                    <h1>Big <span>Save</span> with our car Service</h1>
+                    <p>
+                        Rent the car for your dream. Explore your dream with our family &
+                        friends.
+                    </p>
+                    <div class="button_container">
+                        <a href="#"><button id="car_book">
+                                Book Car
+                                <span class="material-symbols-outlined"> task_alt </span>
+                            </button></a>
+                        <a href="#"><button id="know_more">
+                                Learn More
+                                <span class="material-symbols-outlined">
+                                    arrow_forward_ios
+                                </span>
+                            </button></a>
+                    </div>
+                </div>
+                <div class="car-image">
+                    <img src="/Image folder/jaguar.png" alt="" class="home-car" />
+                </div>
+            </section>
+        </nav>
+        <div class="scroll_top">
+            <span class="material-symbols-outlined"> expand_less </span>
+        </div>
+    </header>
+    <main>
+        <section class="booking" id="booking">
+            <div class="booking_details">
+                <h2>Book your car</h2>
+                <form action="">
+                    <div class="optionOne options">
+                        <label for=""><span class="material-symbols-outlined"> local_taxi </span>Select Car
+                            Type<span>*</span></label>
+                        <select>
+                            <option>Select your Car</option>
+                            <option class="all_options" value="Jaguar">Jaguar</option>
+                            <option class="all_options" value="BMW">BMW</option>
+                            <option class="all_options" value="Mercedes">Mercedes</option>
+                            <option class="all_options" value="Audi">Audi</option>
+                            <option class="all_options" value="Range Rover">
+                                Range Rover
+                            </option>
+                            <option class="all_options" value="Forturner">Forturner</option>
+                            <option class="all_options" value="Tata Electric">
+                                Tata Electric
+                            </option>
+                            <option class="all_options" value="Mahindra SUV">
+                                Mahindra SUV
+                            </option>
+                            <option class="all_options" value="Swift Dzire">
+                                Swift Dzire
+                            </option>
+                            <option class="all_options" value="Alto">Alto</option>
+                        </select>
+                    </div>
+                    <div class="optionTwo options">
+                        <label for=""><span class="material-symbols-outlined"> pin_drop </span>
+                            Pick-up location<span>*</span></label>
+                        <select>
+                            <option>Select your Pick-up location</option>
+                            <option class="all_options" value="Delhi">Delhi</option>
+                            <option class="all_options" value="Mumbai">Mumbai</option>
+                            <option class="all_options" value="Bangluru">Bangluru</option>
+                            <option class="all_options" value="Chennai">Chennai</option>
+                            <option class="all_options" value="Kolkata">Kolkata</option>
+                            <option class="all_options" value="Lucknow">Lucknow</option>
+                            <option class="all_options" value="Hyderabad">Hyderabad</option>
+                            <option class="all_options" value="Pune">Pune</option>
+                            <option class="all_options" value="Ahmedabad">Ahmedabad</option>
+                        </select>
+                    </div>
+                    <div class="optionThree options">
+                        <label for=""><span class="material-symbols-outlined"> pin_drop </span>Drop
+                            Location<span>*</span></label>
+                        <select>
+                            <option>Select your Drop location</option>
+                            <option class="all_options" value="Delhi">Delhi</option>
+                            <option class="all_options" value="Mumbai">Mumbai</option>
+                            <option class="all_options" value="Bangluru">Bangluru</option>
+                            <option class="all_options" value="Chennai">Chennai</option>
+                            <option class="all_options" value="Kolkata">Kolkata</option>
+                            <option class="all_options" value="Lucknow">Lucknow</option>
+                            <option class="all_options" value="Hyderabad">Hyderabad</option>
+                            <option class="all_options" value="Pune">Pune</option>
+                            <option class="all_options" value="Ahmedabad">Ahmedabad</option>
+                        </select>
+                    </div>
+                    <div class="optionFour options">
+                        <label for=""><span class="material-symbols-outlined"> calendar_month </span>Date of
+                            Journey<span>*</span></label>
+                        <input class="date_options" type="date" id="dateTime" />
+                    </div>
+                </form>
+                <div class="confirm_button">
+                    <button id="confirm">Confirm</button>
+                </div>
+            </div>
+        </section>
+        <div class="all_slot_booking">
+            <div class="booking_slot_confirmation">
+                <label for="name">Name: <span class="booking_name"></span></label>
+                <label for="pick_loc">Pick-up: <span class="pick_location"></span></label>
+                <label for="drop_loc">Drop: <span class="drop_location"></span></label>
+                <label for="date_jor">Date: <span class="Journey_date"></span></label>
+                <label for="fair">Charge: <span class="total_charge"></span></label>
+                <label for="slots">Available Slots: <span class="slot_list"></span></label>
+                <input type="submit" />
+            </div>
+        </div>
+        <section class="some_prescription">
+            <div class="explain_about_cars">
+                <div class="planning">
+                    <h4>Plan your journey now</h4>
+                    <h1>Quick & easy Services</h1>
+                </div>
+                <div class="planning_features">
+                    <div class="planningall">
+                        <div class="plan_logo">
+                            <img src="/Image folder/planOne logo.png" alt="" />
+                        </div>
+                        <div class="aboutPlan-explain">
+                            <h2>Let's Ride</h2>
+                            <p>
+                                Ready for a ride? Let's Go makes renting a car easy for your
+                                next journey!
+                            </p>
+                        </div>
+                    </div>
+                    <div class="planningall">
+                        <div class="plan_logo">
+                            <img src="/Image folder/planTwo logo.png" alt="" />
+                        </div>
+                        <div class="aboutPlan-explain">
+                            <h2>Safe and Secure</h2>
+                            <p>
+                                Drive with confidence! Our safe and secure system ensures
+                                worry-free car rentals every time.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="planningall">
+                        <div class="plan_logo">
+                            <img src="/Image folder/planThree logo.png" alt="" />
+                        </div>
+                        <div class="aboutPlan-explain">
+                            <h2><span>24x7</span> Customer Support</h2>
+                            <p>
+                                Explore anytime! Our 24/7 service ensures you have a car
+                                whenever you need it.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="car_models" id="models">
+            <div class="model_details">
+                <div class="model_titles">
+                    <h4>Car Models</h4>
+                    <h1>See Our Collection</h1>
+                    <p>
+                        Discover a fleet of top-notch cars. From sleek sedans to spacious
+                        SUVs, our collection offers the perfect ride for every adventure.
+                    </p>
+                </div>
+                <div class="model_names">
+                    <div class="model_buttons">
+                        <button class="car_model_bton" value="1">Jaguar</button>
+                        <button class="car_model_bton" value="2">BMW</button>
+                        <button class="car_model_bton" value="5">Mercedes</button>
+                        <button class="car_model_bton" value="3">Audi</button>
+                        <button class="car_model_bton" value="4">Range Rover</button>
+                        <button class="car_model_bton" value="7">Forturner</button>
+                        <button class="car_model_bton" value="6">Tata Electric</button>
+                        <button class="car_model_bton" value="8">Mahindra SUV</button>
+                        <button class="car_model_bton" value="9">Swift Dzire</button>
+                        <button class="car_model_bton" value="10">Alto</button>
+                    </div>
+                    <div class="model_car_logo">
+                        <div class="model_cars">
+                            <img src="/Image folder/jaguar.png" alt="" class="model_image" />
+                        </div>
+                        <div class="car_price_rent_descriptions">
+                            <div class="price_rent">
+                                <span class="rent_price">9999₹</span> / Per Day Charge
+                            </div>
+                            <div class="car_model_details rent_list">
+                                <span>Model</span>
+                                <span class="model_name">Jaguar</span>
+                            </div>
+                            <div class="car_manufature_year_details rent_list">
+                                <span>Active Years</span>
+                                <span class="year">5</span>
+                            </div>
+                            <div class="car_Transmission_details rent_list">
+                                <span>Transmission</span>
+                                <span class="transmission_name">Automatic</span>
+                            </div>
+                            <div class="car_fuel_details rent_list">
+                                <span>Fuel</span>
+                                <span class="fule_name">Petrol</span>
+                            </div>
+                            <div class="car_accessories_details rent_list">
+                                <span>A/C</span>
+                                <span class="accessories_name">Yes</span>
+                            </div>
+                            <div class="car_ratings_details rent_list">
+                                <span>Rating</span>
+                                <span class="ratings_name">4.5/5</span>
+                            </div>
+                            <div class="booking_button">
+                                <a href="#" class="book_car_button">Book Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="about_company_services">
+            <div class="banner">
+                <h1>Experience luxury without spending a fortune! 😀</h1>
+                <p>
+                    Enjoy top-tier amenities, exquisite services, and a first-class
+                    experience, all while staying within your budget.
+                </p>
+            </div>
+        </section>
+        <section class="description_about_company">
+            <div class="full_description">
+                <div class="some_car_images">
+                    <img src="/Image folder/group cars.png" alt="" />
+                </div>
+                <div class="description_content">
+                    <div class="about_us_left">
+                        <p>Why Choose Us?</p>
+                        <h2>Experience Luxury in Affordable price.</h2>
+                        <p>
+                            Indulge in luxury without breaking the bank. Experience opulence
+                            at affordable prices with our unbeatable car rental deals.
+                        </p>
+                        <button class="about_details">
+                            Find Details
+                            <span class="material-symbols-outlined">
+                                arrow_forward_ios
+                            </span>
+                        </button>
+                    </div>
+                    <div class="about_us_right">
+                        <div class="about_contents_one">
+                            <div class="about_img">
+                                <img src="/Image folder/indian map.png" alt="" />
+                            </div>
+                            <div class="describe">
+                                <h2>Full Country Access</h2>
+                                <p>
+                                    Unlock the entire country with our Full Country Access.
+                                    Drive anywhere, anytime, and embrace the freedom of
+                                    limitless exploration.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="about_contents_one">
+                            <div class="about_img">
+                                <img src="/Image folder/savings.png" alt="" />
+                            </div>
+                            <div class="describe">
+                                <h2>Budget Price</h2>
+                                <p>
+                                    Explore on a budget! Enjoy quality rides at affordable prices, making every journey
+                                    memorable without breaking the bank.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="about_contents_one">
+                            <div class="about_img">
+                                <img src="/Image folder/rupee money.png" alt="" />
+                            </div>
+                            <div class="describe">
+                                <h2>No Extra Charge</h2>
+                                <p>
+                                    Transparent pricing, no surprises! Experience hassle-free rentals with No Extra
+                                    Charge – what you see is what you pay.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="user_feedback">
+            <div class="feedback_descriptions">
+                <div class="feedback_heading">
+                    <h1>Client Feedbacks</h1>
+                    <p>
+                        Hear from our clients! Positive feedback fuels us. Discover why customers love our service
+                        through their firsthand
+                        experiences and testimonials. Your satisfaction is our priority.
+                    </p>
+                </div>
+                <div class="feedback_card">
+                    <div class="feedback_message">
+                        <p>
+                            Exceptional service! Seamless process, affordable rates, and a diverse fleet. Highly
+                            recommend for a stress-free and
+                            enjoyable travel experience.
+                        </p>
+                        <div class="user_profile">
+                            <img src="/Image folder/harry potter.jpg" alt="" />
+                            <div class="user_detail">
+                                <h3>Harry potter</h3>
+                                <p>London</p>
+                            </div>
+                            <div class="rating_details">
+                                <span class="display_rating"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="feedback_message">
+                        <p>
+                            Outstanding experience! Reliable, efficient, and friendly service. The variety of vehicles
+                            and hassle-free process make
+                            it my go-to choice. Highly recommended!
+                        </p>
+                        <div class="user_profile">
+                            <img src="/Image folder/harry potter.jpg" alt="" />
+                            <div class="user_detail">
+                                <h3>Harry potter</h3>
+                                <p>London</p>
+                            </div>
+                            <div class="rating_details">
+                                <span class="display_rating"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="query">
+            <div class="asked_query">
+                <div class="query_heading">
+                    <h4>FAQ</h4>
+                    <h1>Frequently Asked Queries.</h1>
+                    <p>
+                        Find quick answers! Explore our Frequently Asked Queries for instant solutions, ensuring a
+                        smooth and informed
+                        experience for your convenience.
+                    </p>
+                </div>
+                <div class="back_car_img">
+                    <img src="/Image folder/audi back.png" alt="" />
+                </div>
+                <div class="query_box">
+                    <div class="query_questions">
+                        <div class="question_details" data-target="1" id="question_one">
+                            <p>1. What is special about comparing rental car deals?</p>
+                            <span class="material-symbols-outlined"> expand_more </span>
+                        </div>
+                        <div class="query_solution one_solution" value="1" id="solution_one">
+                            <p>
+                                Comparing rental car deals is important as it helps find the
+                                best deal that fits your budget and requirements, ensuring you
+                                get the most value for your money. By comparing various
+                                options, you can find deals that offer lower prices,
+                                additional services, or better car models. You can find car
+                                rental deals by researching online and comparing prices from
+                                different rental companies.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="query_questions">
+                        <div class="question_details" data-target="2" id="question_two">
+                            <p>2. How do I find the car rental deals?</p>
+                            <span class="material-symbols-outlined"> expand_more </span>
+                        </div>
+                        <div class="query_solution two_solution" value="2" id="solution_two">
+                            <p>
+                                You can find car rental deals by researching online and
+                                comparing prices from different rental companies. Websites
+                                such as Expedia, Kayak, and Travelocity allow you to compare
+                                prices and view available rental options. It is also
+                                recommended to sign up for email newsletters and follow rental
+                                car companies on social media to be informed of any special
+                                deals or promotions.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="query_questions">
+                        <div class="question_details" data-target="3" id="question_three">
+                            <p>3. How do I find such low rental car prices?</p>
+                            <span class="material-symbols-outlined"> expand_more </span>
+                        </div>
+                        <div class="query_solution three_solution" value="3" id="solution_three">
+                            <p>
+                                Book in advance: Booking your rental car ahead of time can
+                                often result in lower prices. Compare prices from multiple
+                                companies: Use websites like Kayak, Expedia, or Travelocity to
+                                compare prices from multiple rental car companies. Look for
+                                discount codes and coupons: Search for discount codes and
+                                coupons that you can use to lower the rental price. Renting
+                                from an off-airport location can sometimes result in lower
+                                prices.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="downloads">
+            <div class="download_container">
+                <div class="download_controls">
+                    <h2>Downlaod our app to access easily</h2>
+                    <p>
+                        Simplify your experience! Download our app for easy access to seamless car rentals, exclusive
+                        deals, and instant
+                        reservations at your fingertips.
+                    </p>
+                    <div class="download_buttons">
+                        <img src="https://car-rental-ten.vercel.app/static/media/googleapp.e6493904327fe3f9b89c7c75a4f3ae74.svg"
+                            alt="" class="playstore_download" />
+                        <img src="https://car-rental-ten.vercel.app/static/media/appstore.35481c6295b0744dfcc00d35874fbdd8.svg"
+                            alt="" class="ios_download" />
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="car_footer_one car_footer">
+            <div class="some_about_offer">
+                <h2><strong>CAR</strong> Rent</h2>
+                <p>
+                    Drive with ease. Your trusted partner for affordable, secure, and hassle-free car rentals. Explore
+                    now!
+                </p>
+            </div>
+            <div class="contact_services">
+                <div class="contact_one">
+                    <span class="material-symbols-outlined"> phone_in_talk </span>
+                    <h4>+91 12-34-56-78-90</h4>
+                </div>
+                <div class="contact_two">
+                    <span class="material-symbols-outlined"> mail </span>
+                    <h4>carRent@cars.in</h4>
+                </div>
+            </div>
+        </div>
+        <div class="car_footer_two car_footer">
+            <div class="working_hour_details">
+                <h2>WORKING HOURS</h2>
+                <p>Mon - Fri : 9:00AM - 6:00PM</p>
+                <p>Sat : 9:00AM - 4:00PM</p>
+                <p>Sun : Closed</p>
+                <p><strong>24X7 Customer Support</strong></p>
+            </div>
+        </div>
+        <div class="car_footer_three car_footer">
+            <div class="company_locations">
+                <div class="location_availibility">
+                    <h2>COMPANY BRANCHES</h2>
+                    <p>Delhi</p>
+                    <p>Mumbai</p>
+                    <p>Bangluru</p>
+                    <p>Chennai</p>
+                    <p>Kolkata</p>
+                    <p>Lucknow</p>
+                </div>
+            </div>
+        </div>
+        <div class="car_footer_four car_footer">
+            <div class="follow_us">
+                <h2>SUBSCRIPTION</h2>
+                <p>
+                    Unlock convenience! Subscribe for exclusive perks and enjoy a seamless, cost-effective car rental
+                    experience tailored
+                    just for you.
+                </p>
+                <input type="text" class="mail_box" placeholder="example@mail.com" />
+                <input type="submit" href="mailto:carRent@gmail.com" name="subscription_button" id="subscribe" />
+            </div>
+        </div>
+    </footer>
+</body>
+<script src="/main.js"></script>
+
+</html>
