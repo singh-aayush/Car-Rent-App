@@ -32,7 +32,7 @@ document.addEventListener("DOMContentLoaded", function () {
       fuel: "Petrol",
       ac: "YES",
       rating: "4.5/5",
-      carImage: "/Image folder/jaguar.png",
+      carImage: "jaguar.png",
     },
     {
       id: 2,
@@ -44,7 +44,7 @@ document.addEventListener("DOMContentLoaded", function () {
       fuel: "Diesel",
       ac: "YES",
       rating: "4.3/5",
-      carImage: "/Image folder/bmw.png",
+      carImage: "bmw.png",
     },
     {
       id: 3,
@@ -56,7 +56,7 @@ document.addEventListener("DOMContentLoaded", function () {
       fuel: "Diesel",
       ac: "YES",
       rating: "4.6/5",
-      carImage: "/Image folder/audi.png",
+      carImage: "audi.png",
     },
     {
       id: 4,
@@ -68,7 +68,7 @@ document.addEventListener("DOMContentLoaded", function () {
       fuel: "Petrol",
       ac: "YES",
       rating: "4.1/5",
-      carImage: "/Image folder/range rover.png",
+      carImage: "range rover.png",
     },
     {
       id: 5,
@@ -80,7 +80,7 @@ document.addEventListener("DOMContentLoaded", function () {
       fuel: "Petrol",
       ac: "YES",
       rating: "4.8/5",
-      carImage: "/Image folder/mercedes.png",
+      carImage: "mercedes.png",
     },
     {
       id: 6,
@@ -92,7 +92,7 @@ document.addEventListener("DOMContentLoaded", function () {
       fuel: "Electric",
       ac: "YES",
       rating: "4.1/5",
-      carImage: "/Image folder/tata nexon.png",
+      carImage: "tata nexon.png",
     },
     {
       id: 7,
@@ -104,7 +104,7 @@ document.addEventListener("DOMContentLoaded", function () {
       fuel: "Diesel",
       ac: "YES",
       rating: "4.5/5",
-      carImage: "/Image folder/toyota.png",
+      carImage: "toyota.png",
     },
     {
       id: 8,
@@ -116,7 +116,7 @@ document.addEventListener("DOMContentLoaded", function () {
       fuel: "Petrol",
       ac: "YES",
       rating: "4.4/5",
-      carImage: "/Image folder/mahindra suv.png",
+      carImage: "mahindra suv.png",
     },
     {
       id: 9,
@@ -128,7 +128,7 @@ document.addEventListener("DOMContentLoaded", function () {
       fuel: "Petrol",
       ac: "YES",
       rating: "4.8/5",
-      carImage: "/Image folder/swift .png",
+      carImage: "swift .png",
     },
     {
       id: 10,
@@ -140,7 +140,7 @@ document.addEventListener("DOMContentLoaded", function () {
       fuel: "Petrol",
       ac: "NO",
       rating: "3.5/5",
-      carImage: "/Image folder/alto.png",
+      carImage: "alto.png",
     },
   ];
 
