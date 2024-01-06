@@ -32,7 +32,7 @@ document.addEventListener("DOMContentLoaded", function () {
       fuel: "Petrol",
       ac: "YES",
       rating: "4.5/5",
-      carImage: "jaguar.png",
+      carImage: "/Image folder/jaguar.png",
     },
     {
       id: 2,
@@ -44,7 +44,7 @@ document.addEventListener("DOMContentLoaded", function () {
       fuel: "Diesel",
       ac: "YES",
       rating: "4.3/5",
-      carImage: "bmw.png",
+      carImage: "/Image folder/bmw.png",
     },
     {
       id: 3,
@@ -56,7 +56,7 @@ document.addEventListener("DOMContentLoaded", function () {
       fuel: "Diesel",
       ac: "YES",
       rating: "4.6/5",
-      carImage: "audi.png",
+      carImage: "/Image folder/audi.png",
     },
     {
       id: 4,
@@ -68,7 +68,7 @@ document.addEventListener("DOMContentLoaded", function () {
       fuel: "Petrol",
       ac: "YES",
       rating: "4.1/5",
-      carImage: "range rover.png",
+      carImage: "/Image folder/range rover.png",
     },
     {
       id: 5,
@@ -80,7 +80,7 @@ document.addEventListener("DOMContentLoaded", function () {
       fuel: "Petrol",
       ac: "YES",
       rating: "4.8/5",
-      carImage: "mercedes.png",
+      carImage: "/Image folder/mercedes.png",
     },
     {
       id: 6,
@@ -92,7 +92,7 @@ document.addEventListener("DOMContentLoaded", function () {
       fuel: "Electric",
       ac: "YES",
       rating: "4.1/5",
-      carImage: "tata nexon.png",
+      carImage: "/Image folder/tata nexon.png",
     },
     {
       id: 7,
@@ -104,7 +104,7 @@ document.addEventListener("DOMContentLoaded", function () {
       fuel: "Diesel",
       ac: "YES",
       rating: "4.5/5",
-      carImage: "toyota.png",
+      carImage: "/Image folder/toyota.png",
     },
     {
       id: 8,
@@ -116,7 +116,7 @@ document.addEventListener("DOMContentLoaded", function () {
       fuel: "Petrol",
       ac: "YES",
       rating: "4.4/5",
-      carImage: "mahindra suv.png",
+      carImage: "/Image folder/mahindra suv.png",
     },
     {
       id: 9,
@@ -128,7 +128,7 @@ document.addEventListener("DOMContentLoaded", function () {
       fuel: "Petrol",
       ac: "YES",
       rating: "4.8/5",
-      carImage: "swift .png",
+      carImage: "/Image folder/swift .png",
     },
     {
       id: 10,
@@ -140,7 +140,7 @@ document.addEventListener("DOMContentLoaded", function () {
       fuel: "Petrol",
       ac: "NO",
       rating: "3.5/5",
-      carImage: "alto.png",
+      carImage: "/Image folder/alto.png",
     },
   ];
 
@@ -238,103 +238,17 @@ document.addEventListener("DOMContentLoaded", function () {
   document.getElementById("car_book").addEventListener("click", () => {
     scrollSmoothly("booking");
   });
-  document.getElementById("book_car_button").addEventListener("click", () => {
-    scrollSmoothly("booking");
-  });
   document.getElementById("model-link").addEventListener("click", () => {
     scrollSmoothly("models");
   });
-  document
-    .getElementById("detail_finding_button")
-    .addEventListener("click", () => {
-      scrollSmoothly("header");
-    });
   function scrollSmoothly(scroll) {
     const containerName = document.getElementById(scroll);
     if (containerName) {
       containerName.scrollIntoView({ behavior: "smooth" });
     }
   }
+
+  document.getElementById("question_one").addEventListener("click", () => {
+    scrollSmoothly("solution_one");
+  });
 });
-
-// Login detials
-
-const firstName = document.getElementById("firstName");
-const lastName = document.getElementById("lastName");
-const mobNumber = document.getElementById("mobileNumber");
-const userName = document.getElementById("userName");
-const pass = document.getElementById("password");
-const confPass = document.getElementById("confirmPassword");
-const regSubmit = document.getElementById("registerSubmit");
-const loginUser = document.getElementById("loginUserName");
-const loginPass = document.getElementById("loginPassword");
-const logSubmit = document.getElementById("loginSubmit");
-
-// Login details end
-
-// Registration bton start
-
-const regBton = document.getElementById("registerBton");
-const logBton = document.getElementById("loginBton");
-const regPage = document.querySelector(".register_page_details");
-const regPageback = document.querySelector(".register_page");
-const logPage = document.querySelector(".login_page_details");
-const logPageback = document.querySelector(".login_page");
-const newUserLog = document.querySelector(".new_user_login");
-const newUserReg = document.querySelector(".new_user_register");
-
-const register = () => {
-  console.log("hey");
-  regPage.style.display = "flex";
-  logPage.style.display = "none";
-  newUserLog.style.display = "none";
-  newUserReg.style.display = "flex";
-  regPageback.style.backgroundColor = "#eee";
-  logPageback.style.backgroundColor = "tomato";
-  loginAccess.style.display = "flex";
-  console.log("hey");
-};
-
-regBton.addEventListener("click", () => {
-  register();
-});
-
-const login = () => {
-  console.log("hey");
-  logPage.style.display = "flex";
-  regPage.style.display = "none";
-  newUserLog.style.display = "flex";
-  newUserReg.style.display = "none";
-  logPageback.style.backgroundColor = "#eee";
-  regPageback.style.backgroundColor = "tomato";
-  loginAccess.style.display = "flex";
-  console.log("hey");
-};
-
-logBton.addEventListener("click", () => {
-  login();
-});
-
-// registration bton end
-
-// login && registration access start
-
-const userLogin = document.getElementById("loginHere");
-const userRegister = document.getElementById("registerHere");
-const loginAccess = document.querySelector(".login_container");
-
-userLogin.addEventListener("click", () => {
-  login();
-});
-
-userRegister.addEventListener("click", register);
-
-logSubmit.addEventListener("click", () => {
-  loginAccess.style.display = "none";
-});
-
-regSubmit.addEventListener("click", () => {
-  loginAccess.style.display = "none";
-});
-
-// login && registration access end

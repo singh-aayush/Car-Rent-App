@@ -14,6 +14,66 @@
 </head>
 
 <body>
+    <div class="login_container">
+        <div class="login_details">
+            <div class="register_page">
+                <div class="new_user_login">
+                    <div class="new_user_login_bton">
+                        <h1>New User Registration</h1>
+                        <input type="submit" name="Register" value="Register" id="registerBton">
+                    </div>
+                </div>
+                <div class="register_page_details">
+                    <form action="">
+                        <div class="full_name">
+                            <div class="firstName">
+                                <label for="firstName">First Name</label>
+                                <input type="text" name="firstName" placeholder="Enter first name" id="firstName"
+                                    required>
+                            </div>
+                            <div class="lastName">
+                                <label for="lastName">Last Name</label>
+                                <input type="text" name="lastName" placeholder="Enter last name" id="lastName" required>
+                            </div>
+                        </div>
+                        <div class="all_detail">
+                            <label for="mobileNumber">Mob. No.</label>
+                            <input type="tel" name="mobileNumber" placeholder="Enter mobile number" id="mobileNumber"
+                                required>
+                            <label for="userName">User Name</label>
+                            <input type="text" name="userName" id="userName" placeholder="Enter user name" required>
+                            <label for="password">Password</label>
+                            <input type="password" name="password" id="password" placeholder="Enter your password"
+                                required>
+                            <label for="confirmPassword">Confirm Password</label>
+                            <input type="password" name="confirmPassword" id="confirmPassword"
+                                placeholder="Confirm password" required>
+                        </div>
+                    </form>
+                    <input class="submit" type="submit" name="Submit" id="registerSubmit">
+                </div>
+            </div>
+            <div class="login_page">
+                <div class="new_user_register">
+                    <div class="new_user_register_bton">
+                        <h1>Already Register</h1>
+                        <input type="submit" name="Login" value="Login" id="loginBton">
+                    </div>
+                </div>
+                <div class="login_page_details">
+                    <form action="">
+                        <label for="loginUserName">User Name</label>
+                        <input type="text" name="loginUserName" id="loginUserName" placeholder="Enter user name"
+                            required>
+                        <label for="loginPassword">Password</label>
+                        <input type="password" name="loginPassword" id="loginPassword" placeholder="Enter your password"
+                            required>
+                    </form>
+                    <input class="submit" type="submit" name="Submit" id="loginSubmit">
+                </div>
+            </div>
+        </div>
+    </div>
     <header id="header">
         <nav>
             <img src="background-buildings.png" alt="" class="back_img" />
@@ -51,51 +111,8 @@
                     </ul>
                 </div>
                 <div class="register">
-                    <a href="#">Log In</a>
-                    <a href="#">Register</a>
-                </div>
-                <div class="register_details">
-                    <div class="full_registration">
-                        <div class="register_detail">
-                            <div class="register_form">
-                                <form action="">
-                                    <label for="firstname">First Name</label>
-                                    <input type="text" name="firstname" id="Fullname" />
-                                    <label for="secondname">Second Name</label>
-                                    <input type="text" name="secondname" id="Sname" />
-                                    <label for="email">Email</label>
-                                    <input type="email" />
-                                    <label for="password">Create Password</label>
-                                    <input type="password" />
-                                    <label for="confpassword">Confirm Password</label>
-                                    <input type="password" />
-                                </form>
-                                <button class="register_bton">Register</button>
-                            </div>
-                            <!-- <div class="login_here">
-                                <div class="log_bton">
-                                    <button class="login_here">Log In</button>
-                                </div>
-                                <div class="rst_bton">
-                                    <button class="reg_here">Register</button>
-                                </div>
-                            </div> -->
-                        </div>
-
-                        <div class="login_detail">
-                            <div class="login_form">
-                                <form action="">
-                                    <label for="fullname">Full Name</label>
-                                    <input type="text" name="fullname" id="Fname" />
-                                    <label for="email">Email</label>
-                                    <input type="email" />
-                                    <label for="Yourpassword">Password</label>
-                                    <input type="password" />
-                                </form>
-                                <button class="login_bton">Log In</button>
-                            </div>
-                        </div>
-                    </div>
+                    <a href="#" id="loginHere">Log In</a>
+                    <a href="#" id="registerHere">Register</a>
                 </div>
                 <label for="bton" id="bton_icon">
                     <span class="material-symbols-outlined"> menu </span>
@@ -114,7 +131,7 @@
                                 Book Car
                                 <span class="material-symbols-outlined"> task_alt </span>
                             </button></a>
-                        <a href="#"><button id="know_more">
+                        <a href="learn.html"><button id="know_more">
                                 Learn More
                                 <span class="material-symbols-outlined">
                                     arrow_forward_ios
@@ -317,7 +334,7 @@
                                 <span class="ratings_name">4.5/5</span>
                             </div>
                             <div class="booking_button">
-                                <a href="#" class="book_car_button">Book Now</a>
+                                <a class="book_car_button" id="book_car_button">Book Now</a>
                             </div>
                         </div>
                     </div>
@@ -346,7 +363,7 @@
                             Indulge in luxury without breaking the bank. Experience opulence
                             at affordable prices with our unbeatable car rental deals.
                         </p>
-                        <button class="about_details">
+                        <button class="about_details" id="detail_finding_button">
                             Find Details
                             <span class="material-symbols-outlined">
                                 arrow_forward_ios
@@ -455,7 +472,7 @@
                     </p>
                 </div>
                 <div class="back_car_img">
-                    <img src="audi back.png" alt="" />
+                    <img src="car.5e21eedbea3280311aff.png" alt="" />
                 </div>
                 <div class="query_box">
                     <div class="query_questions">

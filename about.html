@@ -15,6 +15,66 @@
 </head>
 
 <body>
+    <div class="login_container">
+        <div class="login_details">
+            <div class="register_page">
+                <div class="new_user_login">
+                    <div class="new_user_login_bton">
+                        <h1>New User Registration</h1>
+                        <input type="submit" name="Register" value="Register" id="registerBton">
+                    </div>
+                </div>
+                <div class="register_page_details">
+                    <form action="">
+                        <div class="full_name">
+                            <div class="firstName">
+                                <label for="firstName">First Name</label>
+                                <input type="text" name="firstName" placeholder="Enter first name" id="firstName"
+                                    required>
+                            </div>
+                            <div class="lastName">
+                                <label for="lastName">Last Name</label>
+                                <input type="text" name="lastName" placeholder="Enter last name" id="lastName" required>
+                            </div>
+                        </div>
+                        <div class="all_detail">
+                            <label for="mobileNumber">Mob. No.</label>
+                            <input type="tel" name="mobileNumber" placeholder="Enter mobile number" id="mobileNumber"
+                                required>
+                            <label for="userName">User Name</label>
+                            <input type="text" name="userName" id="userName" placeholder="Enter user name" required>
+                            <label for="password">Password</label>
+                            <input type="password" name="password" id="password" placeholder="Enter your password"
+                                required>
+                            <label for="confirmPassword">Confirm Password</label>
+                            <input type="password" name="confirmPassword" id="confirmPassword"
+                                placeholder="Confirm password" required>
+                        </div>
+                    </form>
+                    <input class="submit" type="submit" name="Submit" id="registerSubmit">
+                </div>
+            </div>
+            <div class="login_page">
+                <div class="new_user_register">
+                    <div class="new_user_register_bton">
+                        <h1>Already Register</h1>
+                        <input type="submit" name="Login" value="Login" id="loginBton">
+                    </div>
+                </div>
+                <div class="login_page_details">
+                    <form action="">
+                        <label for="loginUserName">User Name</label>
+                        <input type="text" name="loginUserName" id="loginUserName" placeholder="Enter user name"
+                            required>
+                        <label for="loginPassword">Password</label>
+                        <input type="password" name="loginPassword" id="loginPassword" placeholder="Enter your password"
+                            required>
+                    </form>
+                    <input class="submit" type="submit" name="Submit" id="loginSubmit">
+                </div>
+            </div>
+        </div>
+    </div>
     <header id="header">
         <nav>
             <img src="car on road.jpg" alt="" class="about_back_img">
@@ -46,8 +106,8 @@
                     </ul>
                 </div>
                 <div class="register">
-                    <a href="#">Log In</a>
-                    <a href="#">Register</a>
+                    <a href="#" id="loginHere">Log In</a>
+                    <a href="#" id="registerHere">Register</a>
                 </div>
                 <label for="bton" id="bton_icon">
                     <span class="material-symbols-outlined">

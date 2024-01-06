@@ -16,6 +16,265 @@ body {
   scroll-behavior: smooth;
 }
 
+.login_container {
+  display: none;
+  /* display: flex; */
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  position: absolute;
+  /* background-color: #ccc; */
+  width: 100%;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.login_container .login_details {
+  width: 70%;
+  height: 70vh;
+  padding: 0;
+  background-color: #eee;
+  border-radius: 8px;
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+.login_container .login_details .login_page .new_user_register {
+  /* display: flex; */
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+
+.login_container .login_details .register_page .new_user_login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  /* display: none; */
+}
+
+.login_container
+  .login_details
+  .login_page
+  .new_user_register
+  .new_user_register_bton,
+.new_user_login_bton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1.4rem;
+}
+
+.login_container
+  .login_details
+  .login_page
+  .new_user_register
+  .new_user_register_bton
+  #loginBton,
+#registerBton {
+  padding: 5px;
+  width: 100px;
+  height: 35px;
+  border: 2px solid black;
+  font-size: 1rem;
+  background-color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.login_container
+  .login_details
+  .login_page
+  .new_user_register
+  .new_user_register_bton
+  #loginBton:hover,
+#registerBton:hover {
+  background-color: black;
+  border: 2px solid #fff;
+  color: #fff;
+}
+
+.login_container .login_details .register_page {
+  background-color: tomato;
+  z-index: 999;
+  border-top-right-radius: 25%;
+  border-bottom-right-radius: 25%;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+  transition: all 0.2s ease;
+}
+
+.login_container .login_details .login_page {
+  /* background-color: tomato; */
+  z-index: 999;
+  border-top-left-radius: 25%;
+  border-bottom-left-radius: 25%;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  transition: all 0.2s ease;
+}
+
+.login_container .login_details .register_page .register_page_details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  gap: 1rem;
+}
+
+.login_container .login_details .login_page .login_page_details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  gap: 1rem;
+}
+
+.login_container .login_details .register_page .register_page_details .submit {
+  padding: 7px;
+  font-size: 1rem;
+  width: 100px;
+  margin-top: 1rem;
+  border-radius: 5px;
+  font-weight: 600;
+  border: 2px solid black;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.login_container .login_details .login_page .login_page_details .submit {
+  padding: 7px;
+  font-size: 1rem;
+  width: 100px;
+  margin-top: 1rem;
+  border-radius: 5px;
+  font-weight: 600;
+  border: 2px solid black;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  /* display: none; */
+}
+
+.login_container
+  .login_details
+  .register_page
+  .register_page_details
+  .submit:hover {
+  background-color: tomato;
+  color: #000;
+  border: none;
+}
+
+.login_container .login_details .login_page .login_page_details .submit:hover {
+  background-color: tomato;
+  color: #000;
+  border: none;
+}
+
+.login_container .login_details .register_page .register_page_details form {
+  flex-direction: column;
+  display: flex;
+  gap: 10px;
+  width: 80%;
+}
+
+.login_container
+  .login_details
+  .register_page
+  .register_page_details
+  form
+  .full_name {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+.login_container
+  .login_details
+  .register_page
+  .register_page_details
+  form
+  .full_name
+  .firstName,
+.lastName {
+  gap: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.login_container
+  .login_details
+  .register_page
+  .register_page_details
+  form
+  .all_detail {
+  display: flex;
+  justify-content: center;
+  align-items: left;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.login_container
+  .login_details
+  .register_page
+  .register_page_details
+  form
+  label {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.login_container
+  .login_details
+  .register_page
+  .register_page_details
+  form
+  label {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.login_container
+  .login_details
+  .register_page
+  .register_page_details
+  form
+  input {
+  height: 2rem;
+  border-radius: 4px;
+  outline: none;
+  padding: 5px 5px 5px 8px;
+  border: none;
+  width: 100%;
+}
+
+.login_container .login_details .login_page .login_page_details form input {
+  height: 2rem;
+  border-radius: 4px;
+  outline: none;
+  padding: 5px 5px 5px 8px;
+  border: none;
+  width: 100%;
+}
+
+.login_container .login_details .login_page .login_page_details form {
+  flex-direction: column;
+  display: flex;
+  gap: 10px;
+  width: 60%;
+  /* display: none; */
+}
+
 header {
   width: 100%;
   height: 100vh;
@@ -191,6 +450,11 @@ nav > img {
 .nav-container .register > a:nth-child(1) {
   padding: 14px 20px 14px 14px;
   text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.nav-container .register > a:nth-child(1):hover {
+  color: tomato;
 }
 
 .nav-container .register > a:nth-child(2) {
@@ -199,6 +463,11 @@ nav > img {
   border-radius: 9px;
   color: white;
   text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.nav-container .register > a:nth-child(2):hover {
+  color: black;
 }
 
 .nav-container
@@ -475,6 +744,82 @@ header .scroll_top {
 header .scroll_top:hover {
   box-shadow: 0px 0px 30px #000000;
   transform: rotateZ(360deg);
+}
+
+.learn_more_container {
+  width: 100%;
+  height: fit-content;
+  background-color: #eee;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.learn_more_container .company_logo {
+  padding: 2rem 0 0;
+}
+
+.learn_more_container .company_logo img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.learn_more_container .container_content {
+  width: 80%;
+  margin: auto;
+  padding: 3rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.learn_more_container .container_content .intro_section {
+  padding: 1rem;
+}
+
+.learn_more_container .container_content .intro_section h1 {
+  font-size: 1.5rem;
+  padding-bottom: 7px;
+}
+
+.learn_more_container .container_content .intro_section p {
+  padding: 0 0 0 10px;
+}
+
+.learn_more_container .container_content .detail_section {
+  padding: 1rem;
+}
+
+.learn_more_container .container_content .detail_section h3 {
+  padding-bottom: 8px;
+}
+
+.learn_more_container .container_content .detail_section ol {
+  padding: 0 0 0 15px;
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.learn_more_container .container_content .end_section {
+  padding: 1rem;
+}
+
+.learn_more_container .container_content .end_section h3 {
+  font-size: 1.5rem;
+  padding-bottom: 10px;
+}
+
+.learn_more_container .container_content .end_section p {
+  width: 80%;
+  padding: 0 0 0 10px;
 }
 
 /* MAIN SECTION */
@@ -808,6 +1153,7 @@ main .booking_details .confirm_button #confirm {
 .description_about_company {
   width: 100%;
   margin: 1rem 0 4rem 0;
+  background-image: url(bg.82b3bf0dc76cd35f3da0.png);
 }
 
 .description_about_company .some_car_images {
@@ -992,13 +1338,14 @@ main .booking_details .confirm_button #confirm {
 .query .back_car_img {
   position: absolute;
   z-index: -1;
+  width: 100%;
+  float: left;
 }
 
 .query .back_car_img img {
-  width: 500px;
+  width: 400px;
   position: relative;
-  top: 7rem;
-  left: -37rem;
+  top: 4rem;
   z-index: -1;
 }
 
@@ -1015,7 +1362,7 @@ main .booking_details .confirm_button #confirm {
 
 .query .asked_query .query_box {
   margin-top: 4rem;
-  width: 40%;
+  width: 50%;
   box-shadow: 10px 10px 30px #000;
 }
 
@@ -1041,7 +1388,7 @@ main .booking_details .confirm_button #confirm {
   padding: 18px 15px;
   background-color: #e7e0e0;
   display: none;
-  font-size: 10px;
+  font-size: 14px;
 }
 
 .downloads {
@@ -1162,7 +1509,136 @@ footer .car_footer .follow_us #subscribe {
 
 /* MEDIA QUERIES */
 
+@media (max-width: 1030px) {
+  .login_container
+    .login_details
+    .login_page
+    .new_user_register
+    .new_user_register_bton,
+  .new_user_login_bton {
+    width: 80%;
+  }
+  .login_container
+    .login_details
+    .login_page
+    .new_user_register
+    .new_user_register_bton
+    h1,
+  .new_user_login_bton h1 {
+    font-size: 1.5rem;
+  }
+  .login_container .login_details .register_page .register_page_details {
+    width: 90%;
+    margin: auto;
+    gap: 6px;
+  }
+  .login_container
+    .login_details
+    .register_page
+    .register_page_details
+    form
+    .full_name {
+    gap: 10px;
+  }
+  .login_container
+    .login_details
+    .register_page
+    .register_page_details
+    form
+    .all_detail {
+    gap: 7px;
+  }
+}
 @media (max-width: 790px) {
+  .login_container
+    .login_details
+    .login_page
+    .new_user_register
+    .new_user_register_bton
+    #loginBton,
+  #registerBton {
+    width: 90px;
+    height: 32px;
+    font-size: 14px;
+  }
+  .login_container
+    .login_details
+    .login_page
+    .new_user_register
+    .new_user_register_bton
+    h1,
+  .new_user_login_bton h1 {
+    font-size: 1rem;
+  }
+  .login_container .login_details .register_page .register_page_details form {
+    width: 90%;
+  }
+  .login_container
+    .login_details
+    .register_page
+    .register_page_details
+    form
+    .full_name {
+    gap: 7px;
+  }
+  .login_container
+    .login_details
+    .register_page
+    .register_page_details
+    form
+    label {
+    font-size: 13px;
+  }
+  .login_container
+    .login_details
+    .register_page
+    .register_page_details
+    form
+    input {
+    padding: 3px 3px 3px 5px;
+    font-size: 12px;
+    height: 1.5rem;
+  }
+  .login_container
+    .login_details
+    .register_page
+    .register_page_details
+    form
+    .full_name
+    .firstName,
+  .lastName {
+    gap: 6px;
+  }
+  .login_container
+    .login_details
+    .register_page
+    .register_page_details
+    form
+    .all_detail {
+    gap: 5px;
+  }
+  .login_container
+    .login_details
+    .register_page
+    .register_page_details
+    .submit {
+    width: 80px;
+    font-size: 13px;
+  }
+  .login_container .login_details .login_page .login_page_details form {
+    gap: 7px;
+  }
+  .login_container .login_details .login_page .login_page_details form label {
+    font-size: 13px;
+  }
+  .login_container .login_details .login_page .login_page_details form input {
+    height: 1.5rem;
+    padding: 3px 3px 3px 5px;
+  }
+  .login_container .login_details .login_page .login_page_details .submit {
+    font-size: 13px;
+    width: 80px;
+  }
   header {
     padding: 0 0 13rem 0;
     height: fit-content;
@@ -1791,6 +2267,74 @@ footer .car_footer .follow_us #subscribe {
 }
 
 @media (max-width: 425px) {
+  .login_container .login_details {
+    display: grid;
+    grid-template-columns: none;
+    grid-template-rows: 85% 15%;
+  }
+
+  .login_container
+    .login_details
+    .login_page
+    .new_user_register
+    .new_user_register_bton {
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .login_container .login_details .login_page {
+    border-radius: 0px;
+  }
+
+  .login_container
+    .login_details
+    .login_page
+    .new_user_register
+    .new_user_register_bton
+    #loginBton {
+    width: 80px;
+    font-size: 13px;
+  }
+
+  .login_container .login_details .register_page {
+    grid-row-start: 2;
+    border-radius: 0px;
+  }
+
+  .login_container
+    .login_details
+    .login_page
+    .new_user_register
+    .new_user_register_bton,
+  .new_user_login_bton {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .login_container
+    .login_details
+    .login_page
+    .new_user_register
+    .new_user_register_bton
+    h1,
+  .new_user_login_bton h1 {
+    font-size: 11px;
+  }
+
+  .login_container
+    .login_details
+    .login_page
+    .new_user_register
+    .new_user_register_bton
+    #loginBton,
+  #registerBton {
+    width: 70px;
+    font-size: 10px;
+  }
+
   nav > img {
     width: 100%;
   }
